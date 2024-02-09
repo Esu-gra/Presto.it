@@ -1,0 +1,76 @@
+componente liovewire
+
+    <form wire:submit="store">
+        <div class="mb-3">
+          <label for="exampleName" class="form-label">Nome</label>
+          <input wire:model.live="name" type="text" class="form-control" id="exampleName" aria-describedby="nameHelp">
+          @error('name') <span class="error text-danger">{{ $message }}</span> @enderror
+        </div>
+        <div class="mb-3">
+          <label for="examplePrice" class="form-label">Prezzo</label>
+          <input wire:model.live="price" type="number" class="form-control" id="exampleInputPrice">
+          @error('price') <span class="error text-danger">{{ $message }}</span> @enderror
+        </div>
+        {{-- <div class="mb-3">
+            <label for="inputCategory" class="form-label">Categorie:</label>
+            <select multiple id="inputCategory" class="form-control" wire:model="categorySelected">
+              @foreach($categories as $category)
+              <option value="{{$category->id}}">{{$category->name}}</option>
+              @endforeach
+            </select>
+            @error('categorySelected') <span class="error">{{ $message }}</span> @enderror
+          </div> --}}
+        <button type="submit" class="btn btn-primary">Invia</button>
+      </form>
+
+      <?php
+
+namespace App\Livewire;
+
+use App\Models\Article;
+use Livewire\Component;
+
+class Create extends Component
+{  
+    public $name;
+    public $price;
+
+    protected $rules = [
+        'name' => 'required|min:6',
+        'price' => 'required',
+    ];
+
+    protected $messages = [
+        'name.required' => 'Il titolo é richiesto',
+        'name.min' => 'Il titolo deve essere di minimo 5 caratteri',
+        'price.required' => 'Il corpo é richiesto',
+        
+    ];
+
+   //!live validations. Inserire wire:model.live nel form per renderla efficace!
+    public function updated($property)
+    {
+        $this->validateOnly($property);
+    }
+
+    public function store()
+    {
+        $this->validate();
+        Article::create([
+            'name'=>$this->name,
+            'price'=>$this->price,
+            ]);
+
+        $this->reset();
+
+        return redirect(route('create'))->with('message', 'Aggiunto');
+    }
+
+    public function render()
+    {
+        return view('livewire.create-form');
+    }
+
+
+    
+}
