@@ -14,4 +14,6 @@ class PublicController extends Controller
     return view('welcome', compact('articles'));
 }
 
+
+
 }

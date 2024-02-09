@@ -1,0 +1,17 @@
+.swiper {
+    width: auto;
+    height: auto;
+
+
+ 
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .swiper-slide img {
+
+    width: 100%;
+  }
