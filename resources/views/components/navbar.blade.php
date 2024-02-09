@@ -9,6 +9,24 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>
                 </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorie
+                    </a>
+
+                    <ul class="dropdown-menu">
+                    @foreach ($categories as $category)
+                        
+               
+                      <li><a class="dropdown-item" href="{{route('categoryShow',$category)}}">{{$category->name}}</a></li>
+                      @endforeach
+                      
+                    </ul>
+                  </li>
+                
+                 
+
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('create')}}">Inserisci Annuncio</a>
                 </li>
@@ -34,6 +52,8 @@
                             <form id="form-logout" action="{{route('logout')}}" method="POST" class="d-none">@csrf</form>
                             @endauth
                         </ul>
+
+
                     </li>
 
             </ul>

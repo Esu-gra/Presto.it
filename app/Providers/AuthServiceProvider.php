@@ -3,6 +3,9 @@
 namespace App\Providers;
 
 // use Illuminate\Support\Facades\Gate;
+use App\Models\Category;
+use Illuminate\View\View;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
 class AuthServiceProvider extends ServiceProvider
@@ -19,8 +22,13 @@ class AuthServiceProvider extends ServiceProvider
     /**
      * Register any authentication / authorization services.
      */
-    public function boot(): void
-    {
-        //
+   
+        public function boot(): void
+{
+    if (Schema::hasTable('categories')) {
+        view()->share('categories', Category::all());
     }
 }
+   
+    }
+
