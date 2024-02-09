@@ -7,6 +7,10 @@
     <div class="card-body text-center">
         <h5 class="card-title">{{$name}}</h5>
         <p class="card-text">{{$price}}</p>
-        <a href="#" class="button"><span>Dettagli</span></a>
+        <p class="card-text">{{$category}}</p>
+        <p class="card-text">descrizione: {{$description}}</p>
+
+
+        <a href="{{$link}}" class="button"><span>Dettagli</span></a>
     </div>
 </div>
