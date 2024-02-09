@@ -9,7 +9,8 @@ class ArticleController extends Controller
 {       public function __construct()
     {
         $this->middleware('auth')->except('home','login','register');
-    }
+    } 
+    
     /**
      * Display a listing of the resource.
      */
@@ -41,7 +42,7 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        return view ('article.show', compact('article'));
+        return view('article.show', compact('article'));
     }
 
     /**

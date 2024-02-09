@@ -15,7 +15,7 @@
                 id="{{$article->id}}"
                 name="{{$article->name}}"
                 price="{{$article->price}}"
-                description="{{$article->description}}"
+                description="{{$article->desciption}}"
                 category="{{$article->category->name}}"
                 link="{{route('show', $article)}}"
                 />
