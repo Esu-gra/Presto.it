@@ -7,6 +7,7 @@
     <div class="card-body text-center">
         <h5 class="card-title">{{$name}}</h5>
         <p class="card-text">{{$price}}</p>
-        <a href="#" class="button"><span>Dettagli</span></a>
+        <p>{{$category}}</p>
+        <a href="{{$link}}" class="button"><span>Dettagli</span></a>
     </div>
 </div>

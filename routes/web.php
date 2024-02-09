@@ -6,5 +6,6 @@ use App\Http\Controllers\ArticleController;
 
 Route::get('/',[PublicController::class, 'home'])->name('home');
 Route::get('/create',[ArticleController::class, 'create'])->name('create');
+Route::get('/show/{article}',[ArticleController::class, 'show'])->name('show');
 
 

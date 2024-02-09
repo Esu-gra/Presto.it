@@ -15,7 +15,9 @@
                 id="{{$article->id}}"
                 name="{{$article->name}}"
                 price="{{$article->price}}"
-                {{-- link="{{route('show', $article)}}" --}}
+                description="{{$article->desciption}}"
+                category="{{$article->category->name}}"
+                link="{{route('show', $article)}}"
                 />
             </div>
         @endforeach
