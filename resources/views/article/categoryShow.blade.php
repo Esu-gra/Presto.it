@@ -3,7 +3,7 @@
 
     <div class="container">
         <div class="row">
-            @foreach ($articles as $article)
+            @foreach ($category->articles as $article)
                 <div class="col-12 col-md-4">
                     <x-cards
                     id="{{$article->id}}"

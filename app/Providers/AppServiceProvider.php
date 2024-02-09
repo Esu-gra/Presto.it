@@ -4,7 +4,6 @@ namespace App\Providers;
 
 use App\Models\Category;
 use Illuminate\Support\Facades\View;
-use App\Providers\AppServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 
