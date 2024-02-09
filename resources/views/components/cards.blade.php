@@ -1,7 +1,3 @@
-
-
-
-
 <div class="card">
     <img src="https://picsum.photos/200/300" class="card-img-top" id="home_img" alt="...">
     <div class="card-body text-center">
