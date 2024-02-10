@@ -1,7 +1,7 @@
 <x-layout>
 <div class="container">
     <div class="row">
-        <div class="col-12 text-center">
+        <div class="col-12 col-md-6 text-center">
             <h1>Inserisci</h1>
         </div>
     </div>
