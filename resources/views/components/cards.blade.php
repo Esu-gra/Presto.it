@@ -4,6 +4,7 @@
         <h5 class="card-title">{{$name}}</h5>
         <p class="card-text">{{$price}}</p>
         <p>{{$category}}</p>
-        <a href="{{$link}}" class="button"><span>Dettagli</span></a>
-    </div>
+        
+        <a href="{{$link}}" class="button btn btn-primary"><span>Dettagli</span></a>
+    </div> 
 </div>

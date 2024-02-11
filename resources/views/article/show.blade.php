@@ -29,12 +29,17 @@
                         <p class="card-text">{{ $article->price }}</p>
                         <p>{{ $article->description }}</p>
                         <p>{{ $article->category->name }}</p>
-                        <a href="/" class="button"><span>Torna indietro</span></a>
-                    </div>
-                    @auth
-                            <button type="button" class="btn btn-primary" >
-                            <a class="text-light" href="{{route('create_review', $article)}}">Launch static backdrop modal</a>
+                        <button type="button" class="btn btn-primary">   
+                            <a href="/" class="button">Torna indietro</a>
                         </button>
+                       
+                        @auth
+                    <button type="button" class="btn btn-primary" >
+                        <a class="text-light recensione" href="{{route('create_review', $article)}}">Lascia una recensione</a>
+                    </button>
+                </div>
+                   
+                            
                         @endauth
                     
                 </div>
