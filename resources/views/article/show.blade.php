@@ -29,8 +29,9 @@
                         <p class="card-text">{{ $article->price }}</p>
                         <p>{{ $article->description }}</p>
                         <p>{{ $article->category->name }}</p>
-                        <button type="button" class="btn btn-primary">   
-                            <a href="/" class="button">Torna indietro</a>
+                        <button type="button" class="btn btn-primary" >
+                            <a href="/" class="button_back"><span>Torna Indietro</span></a>
+
                         </button>
                        
                         @auth
