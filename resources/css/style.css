@@ -1,7 +1,3 @@
-
-
-/*   
-body */
 body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -10,11 +6,8 @@ body {
   margin: 0;
   padding: 0;
   font-family:  'Poppins', 'Roboto';
- position: relative;
- 
-margin-top:100px;
-
-
+  position: relative;
+  margin-top:100px;
 }
 
 
@@ -28,10 +21,6 @@ margin-top:100px;
   top: 0px;
   background-color: #eee !important;
   display: flex;
-}
-
-.navbar-nav > nav-item-user { 
-   
 }
 
 
@@ -55,7 +44,6 @@ input::-webkit-inner-spin-button {
 
 .button {
   border-radius: 4px;
- 
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -91,6 +79,42 @@ input::-webkit-inner-spin-button {
   right: 0;
 }
 
+.button_back {
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button_back span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button_back span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -150px;
+  transition: 0.5s;
+}
+
+.button_back:hover span {
+  padding-left: 15px;
+}
+
+.button_back:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 /* card show.blade.php */
 html,
 body {
@@ -142,3 +166,6 @@ body {
   text-decoration: none; 
   border-bottom: none; 
 }
+
+
+

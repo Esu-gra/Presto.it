@@ -1,8 +1,8 @@
 <x-layout>
 <div class="container mb-4">
     <div class="row">
-        <div class="col-12 text-center">
-            <h1>STORE</h1>
+         <div class="col-12 text-center text-danger">
+             <h1>Presto.it</h1>
         </div>
     </div>
 </div>
@@ -13,7 +13,7 @@
 @endif
 
 <div class="container ">
-    <div class="row justyfi-content-beetwin">
+    <div class="row justify-content-center">
         @foreach ($articles as $article)
             <div class="col-12 col-md-4 " >
                 <x-cards
