@@ -28,5 +28,6 @@
         @endforeach
     </div>
 </div>
+<h2>CIAO</h2>
 
 </x-layout>
