@@ -45,10 +45,13 @@
                 </div>
             </div>
 
-            <div class="container">
-                <div class="row">
-                    @foreach($reviews as $item)
-                    <h1>{{$item->review}}</h1>
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    @foreach($article->reviews as $review)
+                    <div class="col-12 col-md-6 text-center border border-dark rounded shadow">
+                        <h4>{{$review->user->name}}</h4>
+                        <p>{{$review->review}}</p>
+                    </div>
                     @endforeach
                 </div>
             </div>

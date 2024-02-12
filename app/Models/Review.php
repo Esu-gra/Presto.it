@@ -11,11 +11,16 @@ class Review extends Model
     use HasFactory;
     protected $fillable = [
         'review',
-        'article_id'
+        'article_id',
+        'user_id'
     ];
 
     public function article(): BelongsTo
     {
         return $this->belongsTo(Article::class);
+    }
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
     }
 }

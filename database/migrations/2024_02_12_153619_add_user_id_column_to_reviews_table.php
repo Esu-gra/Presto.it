@@ -11,8 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('articles', function (Blueprint $table) {
-            $table->string('description')->default('Not_Available');
+        Schema::table('reviews', function (Blueprint $table) {
+           $table->unsignedBigInteger('user_id');
+           $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
@@ -21,9 +22,9 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('articles', function (Blueprint $table) {
-            $table->dropForeign(['category_id']);
-            $table->dropColumn('description');
+        Schema::table('reviews', function (Blueprint $table) {
+            $table->dropForeign(['user_id']);
+            $table->dropColumn('user_id');
         });
     }
 };
