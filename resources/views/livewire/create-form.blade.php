@@ -26,6 +26,7 @@
             @error('category_id') <span class="error">{{ $message }}</span> @enderror
         </div>
         <button type="submit" class="btn btn-primary">Invia</button>
+        
     </form>
 </div>
 

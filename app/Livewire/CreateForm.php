@@ -3,9 +3,10 @@
 namespace App\Livewire;
 
 use App\Models\Article;
-use App\Models\Category;
 use Livewire\Component;
+use App\Models\Category;
 use Illuminate\Support\Facades\Auth;
+
 
 class CreateForm extends Component
 {   
@@ -47,15 +48,20 @@ class CreateForm extends Component
     public function store()
     {
         $this->validate();
-
+        
+       
+        
         Article::create([
             'name' => $this->name,
             'description'=>$this->description,
             'price' => $this->price,
             'category_id' => $this->category_id,
+            
 
             'user_id' => Auth::user()->id,
         ]);
+
+        
 
         $this->reset();
 

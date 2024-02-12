@@ -14,6 +14,6 @@ Route::get('/category/show/{category}',[CategoryController::class,'categoryShow'
 
 
 // Rotte recensioni
-Route::get('/create/review',[ReviewController::class,'create'])->name('create_review');
-Route::post('/store/review',[ReviewController::class,'store'])->name('store_review');
+Route::get('/create/review/{article}',[ReviewController::class,'create'])->name('create_review');
+Route::post('/store/review/{article}',[ReviewController::class,'store'])->name('store_review');
 

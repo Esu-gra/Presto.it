@@ -52,6 +52,7 @@ input::-webkit-inner-spin-button {
   transition: all 0.5s;
   cursor: pointer;
   text-decoration: none;
+  
 }
 
 .button span {

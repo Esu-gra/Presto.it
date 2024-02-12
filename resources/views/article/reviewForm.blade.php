@@ -3,7 +3,7 @@
 <div class="container mt-5">
     <div class="row justify-content-center ">
         <div class="col-12 col-md-6">
-            <form method="POST" action="{{route('store_review')}}">
+            <form method="POST" action="{{route('store_review', compact('article'))}}">
                 @csrf
                 <div class="mb-3">
                   
@@ -11,7 +11,7 @@
                     <label for="floatingTextarea"></label>
                     <textarea name="review" class="form-control" placeholder="Lasciaci una recensione" id="floatingTextarea"></textarea>
                   </div>
-                <button type="submit" class="btn btn-primary">Invia recensione</button>
+                <button type="submit" class="btn btn-primary mt-3">Invia recensione</button>
               </form>
         </div>
     </div>

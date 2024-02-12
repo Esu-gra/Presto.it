@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\Article;
 use App\Models\Category;
+use App\Models\Review;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
@@ -22,11 +24,21 @@ class AppServiceProvider extends ServiceProvider
      */
   
     
-        public function boot(): void
-{
+        public function boot(): void{
     if (Schema::hasTable('categories')) {
         view()->share('categories', Category::all());
     }
+
+    
 }
-    }
+
+
+}
+
+
+   
+
+
+
+
 
