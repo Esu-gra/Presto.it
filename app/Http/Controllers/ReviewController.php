@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use App\Models\Review;
 use Illuminate\Http\Request;
 
@@ -23,19 +24,22 @@ class ReviewController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Article $article)
+
     {
-        return view('article.reviewForm');
+        $article = Article::findOrFail($article->id);
+        return view('article.reviewForm', compact('article'));
+
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request, Article $article)
     {
      
 
-        $reviews = Review::create([
+        $article->reviews()->create([
         'review'=>$request->review,
    ]);
         return redirect()->route('home')->with('message','recensione creata');
