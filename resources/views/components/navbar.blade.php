@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary ">
+<nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
     <div class="container-fluid">
         <a class="navbar-brand m-0" href="{{ route('home') }}">
             <i class="fa-solid me-1 fa-house"></i>

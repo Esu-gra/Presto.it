@@ -44,6 +44,14 @@
                     
                 </div>
             </div>
+
+            <div class="container">
+                <div class="row">
+                    @foreach($reviews as $item)
+                    <h1>{{$item->review}}</h1>
+                    @endforeach
+                </div>
+            </div>
         </div>
     </div>
     
