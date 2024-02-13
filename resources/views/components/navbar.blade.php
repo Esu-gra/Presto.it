@@ -29,6 +29,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('create') }}">Inserisci Annuncio</a>
             </li>
+            @auth
             {{-- revisor buttons & co. --}}
             @if (Auth::user()->is_revisor)
             <li class="nav-item">
@@ -41,6 +42,7 @@
                 </a>
             </li>
             @endif
+            @endauth
             {{-- chiusura bottone revisore --}}
             <li class="nav-item">
                 <a class="nav-link" href="{{route('index')}}">Tutti gli Articoli</a>
