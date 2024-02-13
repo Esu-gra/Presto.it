@@ -29,9 +29,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('create') }}">Inserisci Annuncio</a>
                 </li>
-                {{-- <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li> --}}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('index')}}">Tutti gli Articoli</a>
+                </li>
                 <li class="nav-item dropdown  nav-item-user">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             @if(Auth::user())

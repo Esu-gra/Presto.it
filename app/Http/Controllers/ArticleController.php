@@ -9,18 +9,18 @@ use Illuminate\Http\Request;
 class ArticleController extends Controller
 {       public function __construct()
     {
-        $this->middleware('auth')->except('home','login','register','show', 'article');
+        $this->middleware('auth')->except('home','login','register','show', 'article', 'index');
     } 
     
     /**
      * Display a listing of the resource.
      */
-    // public function index()
-    // {
-    //     $articles = Article::all();
+    public function index()
+    {
+        $articles = Article::all();
 
-    //     return view ('welcome', compact('articles'));
-    // }
+        return view ('article.index', compact('articles'));
+    }
 
     /**
      * Show the form for creating a new resource.
