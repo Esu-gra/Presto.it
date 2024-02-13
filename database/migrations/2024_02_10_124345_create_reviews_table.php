@@ -16,7 +16,7 @@ return new class extends Migration
             $table->longText('review');
             $table->timestamps();
             $table->unsignedBigInteger('article_id');
-            $table->foreign('article_id')->references('id')->on('reviews');
+            $table->foreign('article_id')->references('id')->on('articles');
         });
     }
 

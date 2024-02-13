@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Article;
 use App\Models\Review;
+use App\Models\Article;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ReviewController extends Controller
 {
@@ -41,6 +42,7 @@ class ReviewController extends Controller
 
         $article->reviews()->create([
         'review'=>$request->review,
+        'user_id'=>Auth::user()->id,
    ]);
         return redirect()->route('home')->with('message','recensione creata');
     }
