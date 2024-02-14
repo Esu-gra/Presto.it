@@ -37,26 +37,21 @@ body {
 
 
 .header{
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
   background-image:url('/public/img/presto-header.jpeg');
+  background-position: center;
   margin: 0%;
-
-
 }
 
 
-/* Chrome, Safari, Edge, Opera */
+/* input number form inserisci annuncio, per non far vedere le freccettine */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
-/* input[type=number] {
-  -moz-appearance: textfield;
-} */
 
 #home_img
 {
@@ -102,42 +97,7 @@ input::-webkit-inner-spin-button {
   right: 0;
 }
 
-.button_back {
-  border-radius: 4px;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 16px;
-  padding: 5px;
-  transition: all 0.5s;
-  cursor: pointer;
-  text-decoration: none;
-}
 
-.button_back span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button_back span:after {
-  content: '\00ab';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  left: -150px;
-  transition: 0.5s;
-}
-
-.button_back:hover span {
-  padding-left: 15px;
-}
-
-.button_back:hover span:after {
-  opacity: 1;
-  right: 0;
-}
 /* card show.blade.php */
 html,
 body {
@@ -179,12 +139,13 @@ body {
   
 }
 
-
-
+/*riga dropdown menu accedi/registrati*/
+.dropdown-divider
+{
+  display: none;
+}
 
 /* recensione */
-
-
 .recensione {
   text-decoration: none; 
   border-bottom: none; 
