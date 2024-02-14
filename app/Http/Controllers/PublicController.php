@@ -14,6 +14,12 @@ class PublicController extends Controller
     return view('welcome', compact('articles'));
 }
 
+public function searchArticles (Request $request)
+{   //!da aggiungere paginazione
+    $articles = Article::search($request->searched)->where('is_accepted', true)->get();
+    return view('article.index', compact('articles'));
+}
+
 
 
 }

@@ -2,13 +2,14 @@
 
 namespace App\Models;
 
+use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Article extends Model
 {
-    use HasFactory;
+    use HasFactory, Searchable;
 
     protected $fillable=
     [
@@ -20,6 +21,18 @@ class Article extends Model
         
 
     ];
+
+    public function toSearchableArray(){
+
+        $array = [
+            'id'=>$this->id,
+            'name'=>$this->name,
+            'description'=>$this->description,
+            'price'=>$this->price,
+            'category'=>$this->category,
+            ];
+            return $array;
+    }
 
     // Definizione della relazione con Category (1 a N)
     public function category()

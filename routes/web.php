@@ -28,10 +28,11 @@ Route::patch('/rifiuta/annuncio/{article}', [RevisorController::class, 'rejectAr
 
 // richiesta per diventare revisore
 Route::post('/richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
-
 Route::get('/rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
-
 Route::get('/request', [RevisorController::class, 'request'])->name('request');
-
 Route::post('/request/submit', [RevisorController::class, 'submit'])->name('submit');
+
+//ricerca annuncio
+Route::get('/ricerca/annuncio', [PublicController::class, 'searchArticles'])->name('articles.search');
+
 

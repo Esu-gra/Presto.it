@@ -9,19 +9,22 @@
 
     <div class="container mt-5">
         <div class="row justify-content-center">
-            @foreach ($articles as $item)
+            @forelse ($articles as $article)
             <div class="col-12 col-md-4">
                 <div class="card" style="width: 18rem;">
                     <img src="https://laravel-livewire.com/img/twitter.png" class="card-img-top p-2" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title text-center">{{$item->name}}</h5>
+                        <h5 class="card-title text-center">{{$article->name}}</h5>
                         <div class="d-flex justify-content-center mt-5">
-                            <a href="{{route('show', $item)}}" class="btn btn-primary">Vuoi saperne di più?</a>
+                            <a href="{{route('show', $article)}}" class="btn btn-primary">Vuoi saperne di più?</a>
                         </div>
                     </div>
                 </div>
             </div>
-            @endforeach
+            @empty
+                <p>Nessun articolo trovato</p>
+            @endforelse
+            {{-- {{$articles->links()}} --}}
         </div>
     </div>
 </x-layout>
