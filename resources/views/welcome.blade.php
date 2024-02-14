@@ -6,12 +6,12 @@
                     <h1 class="display-2 fw-bold text-white">Presto.it</h1>
                     <h4 class="text-white">Dall'essenziale all'eccezionale: trova tutto qui</h4>
                 </div>
-                <div class="col-4">
+                {{-- <div class="col-4">
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
                         <input type="text" class="form-control" aria-label="Sizing example input"
                             aria-describedby="inputGroup-sizing-default">
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

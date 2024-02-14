@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
+<nav class=" navbar navbar-expand-lg bg-body-tertiary shadow">
     <div class="container-fluid">
         <a class="navbar-brand m-0" href="{{ route('home') }}">
             <i class="fa-solid me-1 fa-house"></i>
@@ -32,7 +32,7 @@
             @auth
             {{-- revisor buttons & co. --}}
             @if (Auth::user()->is_revisor)
-            <li class="nav-item">
+            <li class="nav-item me-4">
                 <a class="nav-link btn btn-outline-success btn-sm position-relative" aria-current="page" href="{{route('revisor.index')}}">
                 Zona Revisore
                 <span class="position-absolute top-0 start-100 transale-middle badge rounded-pill bg-danger">
@@ -47,9 +47,11 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{route('index')}}">Tutti gli Articoli</a>
             </li>
+            @auth
             <li class="nav-item">
                 <a class="nav-link" href="{{route('request')}}">Lavora con noi</a>
             </li>
+            @endauth
             <li class="nav-item dropdown  nav-item-user">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     @if(Auth::user())

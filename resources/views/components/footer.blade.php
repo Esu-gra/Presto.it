@@ -18,12 +18,12 @@
        
    </div>
    <div class="container-fluid">
-    <div class="row justify-content-center">
+    {{-- <div class="row justify-content-center">
         
          <div class="col-5 col-md-2">
            <a class="button-88 text-decoration-none ms-4"  role="button"  href="">Lavora con noi</a> 
          </div>
-        </div>
+        </div> --}}
          <div class="row mt-4">
             <div class="footerBottom  col-12">
                 <p class=>Copyright &copy;2024;Design by <span class="designer">Presto.it</span></p>

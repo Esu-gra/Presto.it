@@ -2,9 +2,9 @@
 
 
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             @foreach ($category->articles as $article)
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 ms-4">
                     <x-cards
                     id="{{$article->id}}"
                     name="{{$article->name}}"

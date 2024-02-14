@@ -8,8 +8,13 @@ body {
   font-family:  'Poppins', 'Roboto';
   position: relative;
   margin-top:55px;
+  min-height: 150vh;
+  
 
 }
+/* .body > header{
+  margin-top: 55px;
+} */
 
 
 
@@ -176,7 +181,9 @@ body {
 
 
 footer{
+ 
   background-color:#9b615d;
+
   }
   
   .footerContainer{
@@ -311,4 +318,10 @@ footer{
 
 .button-88:active {
   box-shadow: 0 0.3em 1em -0.5em black;
+}
+
+
+/* frecce carosello revisor */
+.visually-hidden{
+  color: black !important;
 }
