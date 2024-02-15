@@ -8,9 +8,12 @@ body {
   font-family:  'Poppins', 'Roboto';
   position: relative;
   margin-top:55px;
-  min-height: 150vh;
+  /* min-height: 150vh; */
   
 
+}
+main{
+  min-height: 100vh;
 }
 /* .body > header{
   margin-top: 55px;
@@ -324,4 +327,11 @@ footer{
 /* frecce carosello revisor */
 .visually-hidden{
   color: black !important;
+}
+
+
+/* MESSAGGIO REVISOR */
+
+.revisor-message{
+  margin-top: 80px !important;
 }

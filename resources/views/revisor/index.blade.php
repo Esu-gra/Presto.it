@@ -1,6 +1,6 @@
 <x-layout>
 
-<div class="container  bg-gradient bg-primary shadow my-5 border rounded">
+<div class="container revisor-message  bg-gradient bg-primary shadow mb-5 border rounded">
     <div class="row">
         <div class="col-12 text-light ">
             <h1 class="text-center py-2">

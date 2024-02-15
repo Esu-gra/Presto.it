@@ -17,11 +17,10 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $articles = Article::where('is_accepted', true)->get();
+        $articles = Article::where('is_accepted', true)
+                            ->orderBy('created_at', 'desc')
+                            ->paginate(6);
         return view('article.index', compact('articles'));
-    ;
-
-        return view ('article.index', compact('articles'));
     }
 
     /**
