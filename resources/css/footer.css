@@ -1,0 +1,103 @@
+footer{
+    
+    background-color:#9b615d;
+    
+}
+
+.footerContainer{
+    width:100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+
+.socialIcons a i{
+    font-size: 2em;
+    color: white;
+    opacity: 0.9;
+    
+}
+.socialIcons a i:hover{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+
+/* effetto icone  */
+
+.socialIcons a:hover{
+    background-color: white;
+    transition: 0.5s;
+} 
+
+.socialIcons a :hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+    
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: nondi;
+    
+}
+
+
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3;
+}
+
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: #9b615d;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: white;
+    
+}
+
+
+
+.designer{
+    
+    opacity: 0.7;
+    text-transform: uppercase;
+    text-transform: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+    
+}
+
+@media (max-width:700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+}

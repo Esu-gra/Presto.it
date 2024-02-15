@@ -1,0 +1,32 @@
+main{
+    min-height: 100vh;
+  }
+  .navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0px;
+    background-color: #9b615d !important;
+    display: flex;
+    margin-bottom: 0%;
+  }
+  
+  
+  .navbar a{
+    color: black;
+  }
+  
+  /*questo codice, come richiesto dalla docente, serve a non mostrare il tag <hr> che di default viene mostrato nel dropdown menu di*/
+.dropdown-divider
+{
+  display: none;
+}
+  
+  /* header */
+  .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url('/public/img/presto-header.jpeg');
+    background-position: center;
+    margin: 0%;
+  }
