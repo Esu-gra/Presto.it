@@ -3,7 +3,7 @@
         <div class="container mb-4">
             <div class="row justify-content-center ">
                 <div class="col-12  text-center text-danger">
-                    <h1 class="display-2 fw-bold text-white">Presto.it</h1>
+                    <h1 class="display-2 fw-bold text-white">{{__('ui.welcome')}}</h1>
                     <h4 class="text-white">Dall'essenziale all'eccezionale: trova tutto qui</h4>
                 </div>
                 {{-- <div class="col-4">

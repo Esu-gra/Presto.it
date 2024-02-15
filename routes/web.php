@@ -36,3 +36,6 @@ Route::post('/request/submit', [RevisorController::class, 'submit'])->name('subm
 Route::get('/ricerca/annuncio', [PublicController::class, 'searchArticles'])->name('articles.search');
 
 
+Route::post('/lingua/{lang}', [PublicController::class, 'setLanguage'])->name('set_language_locale');
+
+

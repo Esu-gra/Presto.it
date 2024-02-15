@@ -1,4 +1,8 @@
 <footer class="mt-5">
+   
+   
+
+
     <div class="footerContainer">
         <div class="socialIcons">
            <a href=""><i class="fa-brands fa-instagram "></i></a>
