@@ -1,0 +1,16 @@
+{
+  "public/img/presto-header.jpeg": {
+    "file": "assets/presto-header-uWm2RqS3.jpeg",
+    "src": "public/img/presto-header.jpeg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-H8yTtYFo.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-EzMDO_tz.js",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
