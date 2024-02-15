@@ -27,7 +27,38 @@
             {{ session('access.denied') }}
         </div>
     @endif
-
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-between">
+            <div class="col-12 col-md-3">
+                <div class="d-flex align-items-center fs-4">
+                    <i class="fa-solid fa-cart-shopping me-2 pb-2 " style="color: #74AFC9;"></i>
+                    <h3>FREE DELIVERY</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quam unde cum qui minima,</p>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="d-flex align-items-center fs-4">
+                    <i class="fa-solid fa-medal me-2 pb-2" style="color: #74AFC9;"></i>
+                    <h3>QUALITY GUARANTEE</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quam unde cum qui minima,</p>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="d-flex align-items-center fs-4">
+                    <i class="fa-solid fa-tag me-2 pb-2" style="color: #74AFC9;"></i>
+                    <h3>DAILY OFFERS</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quam unde cum qui minima,</p>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="d-flex align-items-center fs-4">
+                    <i class="fa-solid fa-shield me-2 pb-2" style="color: #74AFC9;"></i>
+                    <h3>100% SECURE PAYMENT</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quam unde cum qui minima,</p>
+            </div>
+        </div>
+    </div>
     <div class="container mt-4 mb-4">
         <div class="row text-center">
             <div class="col-12">
