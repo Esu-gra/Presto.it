@@ -40,11 +40,13 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('index') }}">Tutti gli Articoli</a>
                 </li>
+                @auth
                 @if (!Auth::user()->is_revisor)
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('request') }}">Lavora con noi</a>
                     </li>
                 @endif
+                @endauth
             </ul>
             <form action="{{ route('articles.search') }}" method="GET" class="d-flex">
                 <input name="searched" type="text" class="form-control me-2" placeholder="Cosa stai cercando?" aria-label="Search" >
