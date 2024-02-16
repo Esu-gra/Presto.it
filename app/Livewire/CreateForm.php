@@ -88,7 +88,7 @@ class CreateForm extends Component
             $article->images()->create(['path' => $image->store('img', 'public')]);
         }
 
-        session()->flash('message', 'Aggiunto');
+        session()->flash('message', 'Grazie. Il tuo articolo sarà revisionato a breve');
         return redirect()->route('create');
     }
 

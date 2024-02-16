@@ -9,10 +9,10 @@ class PublicController extends Controller
 {
 
     public function home()
-    {
-        $articles = Article::where('is_accepted', true)->take(6)->get()->sortByDesc('created_at');
-        return view('welcome', compact('articles'));
-    }
+{
+    $articles = Article::where('is_accepted', true)->orderByDesc('created_at')->take(6)->get();
+    return view('welcome', compact('articles'));
+}
 
     public function searchArticles(Request $request)
     {   //!da aggiungere paginazione
