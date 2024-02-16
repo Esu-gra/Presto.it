@@ -2,7 +2,7 @@
     <div class="row justify-content-center">
         <div class="col-12 d-flex justify-content-center">
             <div class=" card mt-3 mb-4 d-flex justify-content-center"  data-aos="flip-left">
-                <img src="https://picsum.photos/350/200" class="card-img-top  rounded " id="home_img" alt="">
+                <img src="{{$image}}" class="card-img-top  rounded " id="home_img" alt="">
             </div>
         </div>
         <div class="col-12 d-flex flex-column align-items-center justify-content-center">

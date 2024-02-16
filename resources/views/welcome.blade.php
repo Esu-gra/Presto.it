@@ -71,7 +71,8 @@
         <div class="row justify-content-center">
             @foreach ($articles as $article)
                 <div class="col-12 col-md-4">
-                    <x-cards name="{{ $article->name }}" 
+                    <x-cards name="{{ $article->name}}"
+                        image="{{!$article->images()->get()->isEmpty() ? Storage::url($article->images()->first()->path) : 'https://picsum.photos/1000/300'}}" 
                         {{-- price="{{$article->price}}" --}} {{-- description="{{$article->description}}" --}}
                         {{-- category="{{$article->category->name}}" --}} link="{{ route('show', $article) }}" />
                 </div>
