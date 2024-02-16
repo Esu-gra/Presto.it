@@ -75,11 +75,18 @@ class CreateForm extends Component
     {
         $this->validate();    
 
+        Article::create([
+            'name' => $this->name,
+            'description'=>$this->description,
+            'price' => $this->price,
+            'category_id' => $this->category_id,
+            'user_id' => Auth::user()->id,
+        ]);
         if ($this->category) {
             $this->article = Category::find($this->category)->articles()->create($this->validate());
             if(count($this->images)){
                 foreach($this->images as $image){
-                    $this->article->images()->create(['path'=>$image->store('images', 'public')]);
+                    $this->article->images()->create(['path'=>$image->store('img', 'public')]);
                 }
             }
         }
@@ -88,13 +95,6 @@ class CreateForm extends Component
         
 
         
-        // Article::create([
-        //     'name' => $this->name,
-        //     'description'=>$this->description,
-        //     'price' => $this->price,
-        //     'category_id' => $this->category_id,
-        //     'user_id' => Auth::user()->id,
-        // ]);
         
         
 
