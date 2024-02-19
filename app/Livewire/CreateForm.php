@@ -5,8 +5,10 @@ namespace App\Livewire;
 use App\Models\Article;
 use Livewire\Component;
 use App\Models\Category;
-use Illuminate\Support\Facades\Auth;
+use App\Jobs\ResizeImage;
 use Livewire\WithFileUploads;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\File;
 
 class CreateForm extends Component
 {
@@ -84,13 +86,22 @@ class CreateForm extends Component
             'user_id' => Auth::user()->id,
         ]);
 
-        foreach ($this->images as $image) {
-            $article->images()->create(['path' => $image->store('img', 'public')]);
+        if(count($this->images)){
+            foreach ($this->images as $image) {
+                // dd($this->article);
+                // $article->images()->create(['path' => $image->store('img', 'public')]);
+                $newFileName = "articles/{$article->id}";
+                $newImage = $article->images()->create(['path'=>$image->store($newFileName , 'public')]);
+                
+                dispatch(new ResizeImage($newImage->path, 400, 300));
+                
+    
+            }
+            File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
-
-        session()->flash('message', 'Grazie. Il tuo articolo sarà revisionato a breve');
-        return redirect()->route('create');
-    }
+            session()->flash('message', 'Grazie. Il tuo articolo sarà revisionato a breve');
+            return redirect()->route('create');
+        }
 
     public function render()
     {

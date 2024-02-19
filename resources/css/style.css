@@ -105,3 +105,8 @@ margin-top: 60px;
   border-bottom: none; 
 }
 
+#createPrev{
+  height: 200px;
+  width: 200px;
+    background-size: cover;
+}
