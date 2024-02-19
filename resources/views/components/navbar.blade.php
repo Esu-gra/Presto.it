@@ -73,8 +73,6 @@
                 @endauth
             </ul>
         </li>
-        <x-_locale lang="en" />
-        <x-_locale lang="es" />
-        <x-_locale lang="it" />
+       
     </div>
 </nav>

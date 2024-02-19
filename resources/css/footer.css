@@ -1,12 +1,12 @@
 footer{
-    
+
     background-color:#9b615d;
-    
+
 }
 
 .footerContainer{
     width:100%;
-    padding: 70px 30px 20px;
+    padding: 0px 20px 30px 20px; 
 }
 
 .socialIcons{
@@ -15,10 +15,15 @@ footer{
 }
 
 .socialIcons a{
+    display: flex;
+    justify-content: center;
     text-decoration: none;
+    min-width: 50px;
+    min-height: 50px;
     padding: 10px;
     background-color: black;
     margin: 10px;
+    margin-top: 50px;
     border-radius: 15px;
 }
 
@@ -27,7 +32,7 @@ footer{
     font-size: 2em;
     color: white;
     opacity: 0.9;
-    
+
 }
 .socialIcons a i:hover{
     font-size: 2em;
@@ -36,7 +41,7 @@ footer{
 }
 
 
-/* effetto icone  */
+/* / effetto icone  / */
 
 .socialIcons a:hover{
     background-color: white;
@@ -50,14 +55,14 @@ footer{
 
 .footerNav{
     margin: 30px 0;
-    
+
 }
 
 .footerNav ul{
     display: flex;
     justify-content: center;
-    list-style-type: nondi;
-    
+    list-style-type: none;
+
 }
 
 
@@ -81,19 +86,19 @@ footer{
 
 .footerBottom p{
     color: white;
-    
+
 }
 
 
 
 .designer{
-    
+
     opacity: 0.7;
     text-transform: uppercase;
     text-transform: 1px;
     font-weight: 400;
     margin: 0px 5px;
-    
+
 }
 
 @media (max-width:700px){
