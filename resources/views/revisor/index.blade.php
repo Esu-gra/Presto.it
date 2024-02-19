@@ -19,7 +19,7 @@
                     <div class="carousel-inner">
                         @forelse ($article_to_check->images as $images)
                         <div class="carousel-item d-flex justify-content-center @if ($loop->first) active @endif">
-                            <img src="{{ Storage::url($images->path) }}" class="rounded" width="400px">
+                            <img src="{{$images->getUrl(600,400)}}" class="rounded" width="400px">
                         </div>
                         @empty
                         <div class="container alert alert-warning text-center">
