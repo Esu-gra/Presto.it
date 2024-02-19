@@ -7,8 +7,22 @@ return ['welcome'=> 'Welcome on Presto.it',
 "OFFERTE GIORNALIERE"=>"DAILY OFFERS",
 "100% PAGAMENTI SICURI"=>"100% SECURE PAYMENTS",
 "Gli Ultimi Articoli"=>"The Latest Items",
-"Dettagli"=>"Show Me More"
+"Dettagli"=>"Show Me More",
 //!FINE HOMEPAGE
+// !NAVBAR
+"Categorie"=>"Categories",
+"Inserisci annuncio"=>"Insert add",
+"Zona revisore"=>"Auditor area",
+"Messaggi non letti"=>"Unread messages",
+"Tutti gli articoli"=>"All articles",
+"Cosa stai cercando?"=>"What are you looking for?",
+"Lavora con noi"=>"Work with us",
+"Cerca"=>"Search",
+"Benvenuto"=>"Welcome",
+"Ciao registrati o accedi!"=>"Hello register or log in",
+"Registrati"=>"Register",
+//!FOOTER
+"Torna alla Home"=>"Back to Home",
 ];
 
 

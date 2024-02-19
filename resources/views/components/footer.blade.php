@@ -7,7 +7,7 @@
       </div>
       <div class="footerNav d-flex justify-content-center">
          <ul class="ps-0 text-center">
-            <li class="link list-group-item"><a href="{{route('home')}}">Torna alla Home</a></li>
+            <li class="link list-group-item"><a href="{{route('home')}}">{{__("ui.Torna alla Home")}}</a></li>
             {{-- <li><a href="">News</a></li>
             <li><a href="">About</a></li> --}}
          </ul>

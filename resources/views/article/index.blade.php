@@ -6,7 +6,6 @@
             </div>
         </div>
     </div>
-    
     <div class="container mt-5">
         <div class="row justify-content-center">
             @forelse ($articles as $article)
@@ -26,13 +25,7 @@
                 <p class="display-6 text-danger">Nessun articolo trovato</p> <br>
             </div>
             @endforelse
+            {{$articles->links()}}
         </div>
     </div>
-    {{-- <nav class="d-flex justify-content-center mt-5" aria-label="Page navigation example">
-        <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="{{route('index')}}">1</a></li>
-            <li class="page-item"><a class="page-link" href="{{ $articles->PageUrl(2)}}">2</a></li>
-            <li class="page-item"><a class="page-link" href="{{ $articles->PageUrl(3)}}">3</a></li>
-        </ul>
-    </nav> --}}
 </x-layout>

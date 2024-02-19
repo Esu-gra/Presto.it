@@ -5,37 +5,34 @@
                 <h2>Dettaglio <span class="text-danger text-center">{{$article->name}}</span></h2>
             </div>
             <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-12">
-                        <div class="d-flex ">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6">
                             <div class="swiper mySwiper mt-5">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="https://picsum.photos/200/100" class="card-img-top img-fluid" id="app" id="home_img" alt="...">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://picsum.photos/200/100" class="card-img-top" id="app" id="home_img" alt="...">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://picsum.photos/200/100" class="card-img-top" id="app" id="home_img" alt="...">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://picsum.photos/200/100" class="card-img-top" id="app" id="home_img" alt="...">
-                                    </div>
+                                    @if($article->images->isNotEmpty())
+                                        @foreach ($article->images as $image)
+                                            <div class="swiper-slide">
+                                                <img src="{{ $image->getUrl(400, 300) }}">
+                                            </div>
+                                        @endforeach
+                                    @else
+                                        <div class="swiper-slide">
+                                            <img src="/img/default_img.jpg" class="border rounded">
+                                        </div>
+                                    @endif
                                 </div>
                                 <div class="swiper-pagination"></div>
-                            </div>
-                            <div class="col-12 col-md-6 margin-custom card-body d-flex align-items-center justify-content-center flex-column">
+                            </div>                           
+                        </div>
+                            <div class="col-12 col-md-6 d-flex flex-column justify-content-center text-center mt-5">
                                 <h5 class="card-title">Nome:</h5><span><p>{{ $article->name }}</p></span>
                                 <h5 class="card-text">Euro:</h5><span><p>{{ $article->price }}</p></span>
                                 <h5>Categoria:</h5><span><p>{{ $article->category->name }}</p></span>
                             </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="row my-5 justify-content-center">
                     <div class="col-3 d-flex justify-content-end ">
-                        <a href="/" class="btn btn-dark">Torna indietro</a>
+                        <a href="{{route('index')}}" class="btn btn-dark">Torna indietro</a>
                     </div>
                     <div class="col-3">
                         @auth
@@ -54,10 +51,10 @@
         </div>
     </div>
     {{-- carosello RECENSIONI --}}
-    <div class="container-fluid my-5">
-        <div class="row justify-content-start">
+    <div class="container my-5">
+        <div class="row justify-content-center text-center">
             <div class="col-12 col-md-6">
-                <h3 class="text-start m-5">Recensioni</h3>
+                <h3 class="">Recensioni</h3>
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner text-center">
                         @if($article->reviews->isNotEmpty())
