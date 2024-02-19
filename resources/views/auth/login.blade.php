@@ -2,7 +2,7 @@
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-10 text-center">
-                <h2>Bentornato, accedi al tuo account!</h2>
+                <h2>{{__("ui.Bentornato")}}</h2>
             </div>
         </div>
     </div>
@@ -21,7 +21,7 @@
                         <input name="password" type="password" class="form-control" id="exampleInputPassword1">
                     </div>
                     
-                    <button type="submit" class="btn btn-primary shadow">Accedi</button>
+                    <button type="submit" class="btn btn-primary shadow">{{__("ui.Accedi")}}</button>
                 </form>
             </div>
         </div>

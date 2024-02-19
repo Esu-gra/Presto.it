@@ -1,14 +1,5 @@
 <?php
-//! HOME PAGE
-return ['welcome'=> 'Welcome on Presto.it',
-"Dall'essenziale all'eccezionale: trova tutto qui"=>"From the basic to the exceptional. Find it all here!",
-'SPEDIZIONE GRATUITA'=>'FREE SHIPPING',
-"QUALITÀ GRATANTITA"=>"QUALITY GUARANTEED",
-"OFFERTE GIORNALIERE"=>"DAILY OFFERS",
-"100% PAGAMENTI SICURI"=>"100% SECURE PAYMENTS",
-"Gli Ultimi Articoli"=>"The Latest Items",
-"Dettagli"=>"Show Me More",
-//!FINE HOMEPAGE
+return [
 // !NAVBAR
 "Categorie"=>"Categories",
 "Inserisci annuncio"=>"Insert add",
@@ -21,6 +12,44 @@ return ['welcome'=> 'Welcome on Presto.it',
 "Benvenuto"=>"Welcome",
 "Ciao registrati o accedi!"=>"Hello register or log in",
 "Registrati"=>"Register",
+
+//!LOGIN.REGISTER
+"Bentornato"=>"Welcome back, log in to your account!",
+"Accedi"=>"Log in",
+
+//!REGISTER
+"Registrati!"=>"Register!",
+"Nome"=>"Name",
+"Conferma password"=>"Confirm password",
+"Registrati"=>"Register",
+
+//! HOME PAGE
+'welcome'=> 'Welcome on Presto.it',
+"Dall'essenziale all'eccezionale: trova tutto qui"=>"From the basic to the exceptional. Find it all here!",
+'SPEDIZIONE GRATUITA'=>'FREE SHIPPING',
+"QUALITÀ GRATANTITA"=>"QUALITY GUARANTEED",
+"OFFERTE GIORNALIERE"=>"DAILY OFFERS",
+"100% PAGAMENTI SICURI"=>"100% SECURE PAYMENTS",
+"Gli Ultimi Articoli"=>"The Latest Items",
+"Dettagli"=>"Show Me More",
+
+//!INDEX
+"Articoli"=>"All our articles!",
+"Vuoi saperne di piú?"=>"Know more?",
+"Nessun articolo trovato"=>"No articles find",
+
+//!SHOW
+"Dettaglio"=>"Detail ",
+"Nome"=>"Name:",
+"Descrizione"=>"Description:",
+"Categoria"=>"Category:",
+"Torna indietro"=>"Back",
+"Lascia una recensione"=>"Leave a review",
+"Recensioni"=>"Reviews",
+"Scritto da"=>"Writen by:",
+"Commento"=>"Comment",
+"Mi dispiace, non ci sono recensioni"=>"Sorry, there are no reviews",
+
 //!FOOTER
 "Torna alla Home"=>"Back to Home",
 ];

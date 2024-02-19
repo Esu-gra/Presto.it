@@ -12,7 +12,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $categories = ['Rock', 'Pop', 'Indie', 'Metal', 'Funk', 'Sanremo', 'Antonio', 'Dario', 'Esu', 'Lorenzo'];
+        $categories = ['Motore', 'Informatica', 'Cartoleria', 'Domestici', 'Musica', 'Sport', 'Telefoni', 'Giochi', 'Libri', 'Console'];
 
         foreach ($categories as $category) {
             DB::table('categories')->insert([

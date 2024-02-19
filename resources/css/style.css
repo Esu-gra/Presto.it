@@ -83,7 +83,7 @@ margin-top: 60px;
 } */
 
 .card:hover {
-  box-shadow: 5px 8px 12px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 8px 12px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.5);
   
 }
 
@@ -92,9 +92,9 @@ margin-top: 60px;
   transition: box-shadow 0.6s ease; 
   border-radius: 3%;
   background-color: black rgba(0, 0, 0, 0.2);
-  height:400px ;
-  width: 90%;
-  margin: 10px auto;
+  /* height:400px ;
+  width: 90%; */
+  margin: auto;
   
 }
 

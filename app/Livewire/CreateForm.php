@@ -93,7 +93,7 @@ class CreateForm extends Component
                 $newFileName = "articles/{$article->id}";
                 $newImage = $article->images()->create(['path'=>$image->store($newFileName , 'public')]);
                 
-                dispatch(new ResizeImage($newImage->path, 400, 300));
+                dispatch(new ResizeImage($newImage->path, 600, 400));
                 
     
             }

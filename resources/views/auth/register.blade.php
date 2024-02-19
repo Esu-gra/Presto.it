@@ -2,7 +2,7 @@
 <div class="container my-5">
     <div class="row justify-content-center">
         <div class="col-10 text-center">
-            <h2>Registrati!</h2>
+            <h2>{{__("ui.Registrati!")}}</h2>
         </div>
     </div>
 </div>
@@ -13,7 +13,7 @@
             <form method="post" action="{{route('register')}}">
                 @csrf
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nome</label>
+                    <label for="exampleInputEmail1" class="form-label">{{__("ui.Nome")}}</label>
                     <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
@@ -25,10 +25,10 @@
                     <input name="password" type="password" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Conferma Password</label>
+                    <label for="exampleInputPassword1" class="form-label">{{__("ui.Conferma password")}}</label>
                     <input name="password_confirmation" type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <button type="submit" class="btn btn-primary shadow">Registrati</button>
+                <button type="submit" class="btn btn-primary shadow">{{__("ui.Registrati")}}</button>
             </form>
         </div>
     </div>
