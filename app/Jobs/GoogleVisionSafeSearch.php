@@ -58,7 +58,7 @@ class GoogleVisionSafeSearch implements ShouldQueue
         $adult= $safe->getAdult();
         $medical= $safe->getMedical();
         $spoof=$safe->getSpoof();
-        $violence==$safe->getViolence();
+        $violence=$safe->getViolence();
         $racy=$safe->getRacy();
 
 
