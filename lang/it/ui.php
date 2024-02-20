@@ -53,4 +53,7 @@ return [
 
 //!FOOTER
 "Torna alla Home"=>"Torna alla Home",
+
+//!Dettagli
+"Dettagli"=>"Dettagli",
 ];

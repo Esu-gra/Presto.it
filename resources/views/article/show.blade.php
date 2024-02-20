@@ -62,9 +62,9 @@
     </div>
     {{-- carosello RECENSIONI --}}
     <div class="container-fluid my-5">
-        <div class="row justify-content-start">
+        <div class="row justify-content-center">
             <div class="col-12 col-md-6">
-                <h3 class="text-start m-5">{{ __('ui.Recensioni') }}</h3>
+                <h3 class="text-center m-5">{{ __('ui.Recensioni') }}</h3>
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner text-center">
                         @if ($article->reviews->isNotEmpty())

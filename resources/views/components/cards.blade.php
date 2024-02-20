@@ -8,7 +8,7 @@
         <div class="col-12 d-flex flex-column align-items-center justify-content-center">
             <h5 class=" mt-3">{{$name}}</h5>
             <div class="card-body ">
-                <a href="{{$link}}" class="button btn btn-dark px-4 py-2 mt-3"><span>Dettagli</span></a>
+                <a href="{{$link}}" class="button btn btn-dark px-4 py-2 mt-3"><span>{{__("ui.Dettagli")}}</span></a>
             </div> 
         </div>
     </div>

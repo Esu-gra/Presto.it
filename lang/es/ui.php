@@ -51,4 +51,8 @@ return [
 
 //!FOOTER
 "Torna alla Home"=>"Volver a la página de inicio",
+
+//! Dettagli
+"Dettagli"=>"Detalles",
+
 ];

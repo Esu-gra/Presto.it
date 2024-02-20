@@ -10,7 +10,7 @@
     <div class="container mt-5">
         <div class="row justify-content-center">
             @forelse ($articles as $article)
-            <div class="col-10 col-md-4 mb-2 d-flex justify-content-center">
+            <div class="col-10 col-md-4 mb-5 d-flex justify-content-center">
                 <div class="card shadow">
                     <img src="{{!$article->images()->get()->isEmpty() ? $article->images()->first()->getUrl(600,400) : 'https://picsum.photos/1000/300'}}" class="card-img-top p-2 img-fluid" alt="...">
                     <div class="card-body">
@@ -26,6 +26,7 @@
                 <p class="display-6 text-danger">{{__("ui.Nessun articolo trovato")}}</p> <br>
             </div>
             @endforelse
+            {{$articles->links()}}
         </div>
     </div>
     {{-- <nav class="d-flex justify-content-center mt-5" aria-label="Page navigation example">

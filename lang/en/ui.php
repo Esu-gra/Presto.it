@@ -52,7 +52,13 @@ return [
 
 //!FOOTER
 "Torna alla Home"=>"Back to Home",
+
+//! Dettagli
+"Dettagli"=>"Show me more",
 ];
+
+
+
 
 
 
