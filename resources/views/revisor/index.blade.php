@@ -21,12 +21,33 @@
                         <div class="carousel-item d-flex justify-content-center @if ($loop->first) active @endif">
                             <img src="{{$images->getUrl(600,400)}}" class="rounded" width="400px">
                         </div>
+
+
+                        <div class="col-md-3">
+                            <div class="card-body">
+    
+                                <h5 class="tc-accent">Revisona Immagini</h5>
+                                <p>Adulti: <span class="{{$images->adult}}"></span> </p>
+                                <p>Violenza: <span class="{{$images->violance}}"></span> </p>
+                                <p>Satira: <span class="{{$images->spoof}}"></span></p>
+                                <p>Medicina: <span class="{{$images->medicine}}"></span></p>
+                                <p>Contenuto ammiccante: <span class="{{$images->racy}}"></span></p>
+                            </div>
+                          </div> 
+                        
                         @empty
+
                         <div class="container alert alert-warning text-center">
                             L'utente non ha inserito immagini
                         </div>
+                          
+
                         @endforelse
+
+
                     </div>
+
+                    
                     {{-- le frecce del carosello si vedono solo se c'è più di una immagine inserita dall' utente --}}
                     @if ($article_to_check->images->count() > 1)
                     <button class="carousel-control-prev" type="button" data-bs-target="#showCarousel" data-bs-slide="prev">
@@ -57,6 +78,9 @@
                 </form>
             </div>
         </div>
+
+    
+
     </div>
     @endif
 </x-layout>
