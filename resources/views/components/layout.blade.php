@@ -27,7 +27,7 @@
   
 
 
-    <title>Document</title>
+    <title>Presto.it</title>
 </head>
 <body>
 <x-navbar/>
