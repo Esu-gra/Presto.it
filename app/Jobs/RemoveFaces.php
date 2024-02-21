@@ -61,6 +61,7 @@ class RemoveFaces implements ShouldQueue
             
             $image = SpatieImage::load($srcPath);
             
+            //!removefaces
             $image->watermark(base_path('resources/img/smile.png'))
             
             ->watermarkPosition('top-left')
@@ -75,18 +76,8 @@ class RemoveFaces implements ShouldQueue
 
             $image->save($srcPath);
 
-            // ! PROVA
-            $image->watermark(base_path('resources/img/download.png'))
-            
-            ->watermarkPosition('top-right')
-            
-            ->watermarkPadding($bounds[0][0], $bounds[0][1])
-            
-            ->watermarkWidth($w, Manipulations::UNIT_PIXELS)
-            
-            ->watermarkHeight($h, Manipulations::UNIT_PIXELS)
-            
-            ->watermarkFit(Manipulations::FIT_STRETCH);
+            //! watermark
+
 
             $image->save($srcPath);
         }

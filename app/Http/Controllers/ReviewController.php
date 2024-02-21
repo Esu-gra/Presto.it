@@ -38,13 +38,13 @@ class ReviewController extends Controller
      */
     public function store(Request $request, Article $article)
     {
-     
+
 
         $article->reviews()->create([
         'review'=>$request->review,
         'user_id'=>Auth::user()->id,
-   ]);
-        return redirect()->route('home')->with('message','recensione creata');
+        ]);
+        return redirect()->route('create_review', $article)->with('message','Grazie, la tua recensione è stata aggiunta!');
     }
 
     /**

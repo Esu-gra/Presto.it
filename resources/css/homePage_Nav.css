@@ -24,9 +24,12 @@ main{
   
   /* header */
   .header{
-    min-height: 100vh;
+    min-height: 150vh;
     width: 100%;
-    background-image:url('/public/img/presto-header.jpeg');
+    background-image:url('/public/img/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    margin: 0%;
+
+    
   }
