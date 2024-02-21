@@ -1,5 +1,17 @@
 <?php
 return [
+    
+    //!Categorie
+    "Motore"=>"Motors",
+    "Informatica"=>"Computing",
+    "Cartoleria"=>"Paper craft",
+    "Domestici"=>"HouseHolds",
+    "Musica"=>"Music",
+    "Sport"=>"Sport",
+    "Telefoni"=>"Phones",
+    "Giochi"=>"Toys",
+    "Libri"=>"Books",
+    "Console"=>"Consoles",
 // !NAVBAR
 "Categorie"=>"Categories",
 "Inserisci annuncio"=>"Insert add",
@@ -31,7 +43,7 @@ return [
 "OFFERTE GIORNALIERE"=>"DAILY OFFERS",
 "100% PAGAMENTI SICURI"=>"100% SECURE PAYMENTS",
 "Gli Ultimi Articoli"=>"The Latest Items",
-"Dettagli"=>"Show Me More",
+"Dettaglio"=>"Show Me More",
 
 //!INDEX
 "Articoli"=>"All our articles!",
@@ -39,7 +51,7 @@ return [
 "Nessun articolo trovato"=>"No articles find",
 
 //!SHOW
-"Dettaglio"=>"Detail ",
+
 "Nome"=>"Name:",
 "Descrizione"=>"Description:",
 "Categoria"=>"Category:",
@@ -55,6 +67,16 @@ return [
 
 //! Dettagli
 "Dettagli"=>"Show me more",
+//!Form
+"Nome"=>"Name",
+"Scrivi"=>"Write something",
+"Prezzo"=>"Price",
+"Descrizione"=>"Description",
+"Categoria"=>"Categtory",
+"Seleziona una categoria"=>"Select category",
+"Scegli file"=>"Choose a file",
+"Inserisci"=>"Submit article",
+"Invia"=>"Submit",
 ];
 
 

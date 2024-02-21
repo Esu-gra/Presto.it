@@ -31,7 +31,7 @@
                                     <p>{{ $article->price }}</p>
                                 </span>
                                 <h5>{{ __('ui.Categoria') }}</h5><span>
-                                    <p>{{ $article->category->name }}</p>
+                                    <p>{{__("ui.".$article->category->name) }}</p>
                                 </span>
                             </div>
                         </div>

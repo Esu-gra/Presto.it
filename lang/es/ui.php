@@ -1,5 +1,17 @@
 <?php
 return [
+ 
+    //!Categorie
+    "Motore"=>"Motores",
+    "Informatica"=>"Informatica",
+    "Cartoleria"=>"Papeleria",
+    "Domestici"=>"Domestico",
+    "Musica"=>"Musica",
+    "Sport"=>"Deportes",
+    "Telefoni"=>"Telefonos",
+    "Giochi"=>"Juguetes",
+    "Libri"=>"Libros",
+    "Console"=>"Consolas",
 // !NAVBAR
 "Categorie"=>"Categorías",
 "Inserisci annuncio"=>"Insertar anuncio",
@@ -30,7 +42,7 @@ return [
 "OFFERTE GIORNALIERE"=>"OFERTAS DIARIAS",
 "100% PAGAMENTI SICURI"=>"PAGO 100% SEGUROS",
 'Gli Ultimi Articoli'=>'Los últimos artículos',
-"Dettagli"=>"Detalles",
+"Dettaglio"=>"Detalle",
 
 //!INDEX
 "Articoli"=>"Todos nuestros articulos!",
@@ -38,7 +50,7 @@ return [
 "Nessun articolo trovato"=>"No se encontraron articulos",
 
 //!SHOW
-"Dettaglio"=>"Detalle ",
+
 "Nome"=>"Nombre:",
 "Descrizione"=>"Descripción:",
 "Categoria"=>"Categoría:",
@@ -54,5 +66,15 @@ return [
 
 //! Dettagli
 "Dettagli"=>"Detalles",
+//!Form
+"Nome"=>"Nombre",
+"Scrivi"=>"Escriba",
+"Prezzo"=>"Precio",
+"Descrizione"=>"Descripcion",
+"Categoria"=>"Categtoria",
+"Seleziona una categoria"=>"Seleccionar categoria",
+"Scegli file"=>"Seleccionar archivio",
+"Inserisci"=>"Insertar articulo",
+"Invia"=>"Envia",
 
 ];

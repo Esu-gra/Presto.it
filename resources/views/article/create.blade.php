@@ -2,7 +2,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-12  text-center ">
-            <h1>Inserisci</h1>
+            <h1>{{__("ui.Inserisci")}}</h1>
         </div>
     </div>
 </div>

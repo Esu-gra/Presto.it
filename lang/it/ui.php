@@ -1,5 +1,16 @@
 <?php
 return [
+    //!Categorie
+    "Motore"=>"Motori",
+    "Informatica"=>"Informatica",
+    "Cartoleria"=>"Cartoleria",
+    "Domestici"=>"Domestici",
+    "Musica"=>"Musica",
+    "Sport"=>"Sport",
+    "Telefoni"=>"Telefoni",
+    "Giochi"=>"Giochi",
+    "Libri"=>"Libri",
+    "Console"=>"Console",
 // !NAVBAR
 "Categorie"=>"Categorie",
 "Inserisci annuncio"=>"Inserisci annnuncio",
@@ -31,7 +42,7 @@ return [
 "OFFERTE GIORNALIERE"=>"OFFERTE GIORNALIERE",
 "100% PAGAMENTI SICURI"=>"100% PAGAMENTI SICURI",
 'Gli Ultimi Articoli'=>'Gli Ultimi Articoli',
-"Dettagli"=>"Dettagli",
+"Dettagli"=>"j",
 
 //!INDEX
 "Articoli"=>"Tutti i nostri articoli!",
@@ -56,4 +67,15 @@ return [
 
 //!Dettagli
 "Dettagli"=>"Dettagli",
+
+//!Form
+"Nome"=>"Nome",
+"Scrivi"=>"Scrivi",
+"Prezzo"=>"Prezzo",
+"Descrizione"=>"Descrizione",
+"Categoria"=>"Categtoria",
+"Seleziona una categoria"=>"Seleziona una categoria",
+"Scegli file"=>"Scegli file",
+"Inserisci"=>"Inserisci articolo",
+"Invia"=>"Invia",
 ];
