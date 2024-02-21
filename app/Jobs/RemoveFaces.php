@@ -74,6 +74,21 @@ class RemoveFaces implements ShouldQueue
             ->watermarkFit(Manipulations::FIT_STRETCH);
 
             $image->save($srcPath);
+
+            // ! PROVA
+            $image->watermark(base_path('resources/img/download.png'))
+            
+            ->watermarkPosition('top-right')
+            
+            ->watermarkPadding($bounds[0][0], $bounds[0][1])
+            
+            ->watermarkWidth($w, Manipulations::UNIT_PIXELS)
+            
+            ->watermarkHeight($h, Manipulations::UNIT_PIXELS)
+            
+            ->watermarkFit(Manipulations::FIT_STRETCH);
+
+            $image->save($srcPath);
         }
 
         $imageAnnotator->close();
